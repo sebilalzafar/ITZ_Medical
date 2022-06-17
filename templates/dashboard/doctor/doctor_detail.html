@@ -1,0 +1,24 @@
+
+{% extends 'dashboard/base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<form method = 'POST'>
+    {% csrf_token %}
+    <div class="col-8">
+        
+        {{form|crispy}}
+        <button type="submit" value='save' class="btn btn-primary float-right ">Update</button>
+
+    </div>
+
+</form>
+{% for msg in messages %}
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script>
+    swal('Thanku!','You get Email Soon!','success')
+ </script>
+{% endfor %}
+
+{% endblock content %}

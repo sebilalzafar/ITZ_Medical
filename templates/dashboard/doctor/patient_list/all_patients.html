@@ -1,0 +1,467 @@
+{% extends 'dashboard/base.html' %}
+
+
+{% block content %}
+<!-- Banner -->
+
+</style>
+
+<div class="p-10 bg-surface-secondary">
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h6>All Patients</h6>
+
+      </div>
+      <div class="table-responsive">
+        <table class="table table-hover table-nowrap">
+          <thead class="table-light">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Age</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Disease</th>
+              <th scope="col">Status</th>
+              <th scope="col">Reports</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Age Title">
+                <img alt="..." src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" class="avatar avatar-sm rounded-circle patient-pic me-2">
+                <a class="text-heading font-semibold" href="#">
+                  Robert Fox
+                </a>
+              </td>
+              <td data-label="Gender">
+                <span>Web Designer</span>
+              </td>
+              <td data-label="Disease">
+                <a class="text-current" href="mailto:robert.fox@example.com">robert.fox@example.com</a>
+              </td>
+              <td data-label="Lead Score">
+                <a class="text-current" href="tel:202-555-0152">202-555-0152</a>
+              </td>
+              <td data-label="Company">
+                <span class="badge bg-soft-success text-success">7/10</span>
+              </td>
+              <td data-label="">
+                <a class="text-current" href="#">Dribbble</a>
+              </td>
+              <td data-label="" class="text-end">
+                <div class="dropdown">
+                  <a class="text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-three-dots-vertical"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <a href="#!" class="dropdown-item">
+                      Action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Another action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Something else here
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Age Title">
+                <img alt="..." src="https://images.unsplash.com/photo-1610271340738-726e199f0258?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" class="avatar avatar-sm rounded-circle patient-pic me-2">
+                <a class="text-heading font-semibold" href="#">
+                  Darlene Robertson
+                </a>
+              </td>
+              <td data-label="Gender">
+                <span>Developer</span>
+              </td>
+              <td data-label="Disease">
+                <a class="text-current" href="mailto:darlene@example.com">darlene@example.com</a>
+              </td>
+              <td data-label="Lead Score">
+                <a class="text-current" href="tel:224-567-2662">224-567-2662</a>
+              </td>
+              <td data-label="Company">
+                <span class="badge bg-soft-warning text-warning">5/10</span>
+              </td>
+              <td data-label="">
+                <a class="text-current" href="#">Netguru</a>
+              </td>
+              <td data-label="" class="text-end">
+                <div class="dropdown">
+                  <a class="text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-three-dots-vertical"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <a href="#!" class="dropdown-item">
+                      Action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Another action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Something else here
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Age Title">
+                <img alt="..." src="https://images.unsplash.com/photo-1610878722345-79c5eaf6a48c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" class="avatar avatar-sm rounded-circle patient-pic me-2">
+                <a class="text-heading font-semibold" href="#">
+                  Theresa Webb
+                </a>
+              </td>
+              <td data-label="Gender">
+                <span>Marketing Reports</span>
+              </td>
+              <td data-label="Disease">
+                <a class="text-current" href="mailto:theresa.webb@example.com">theresa.webb@example.com</a>
+              </td>
+              <td data-label="Lead Score">
+                <a class="text-current" href="tel:401-505-6800">401-505-6800</a>
+              </td>
+              <td data-label="Company">
+                <span class="badge bg-soft-danger text-danger">2/10</span>
+              </td>
+              <td data-label="">
+                <a class="text-current" href="#">Figma</a>
+              </td>
+              <td data-label="" class="text-end">
+                <div class="dropdown">
+                  <a class="text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-three-dots-vertical"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <a href="#!" class="dropdown-item">
+                      Action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Another action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Something else here
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Age Title">
+                <img alt="..." src="https://images.unsplash.com/photo-1612422656768-d5e4ec31fac0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" class="avatar avatar-sm rounded-circle patient-pic me-2">
+                <a class="text-heading font-semibold" href="#">
+                  Kristin Watson
+                </a>
+              </td>
+              <td data-label="Gender">
+                <span>Sales Manager</span>
+              </td>
+              <td data-label="Disease">
+                <a class="text-current" href="mailto:cody.fisher@example.com">cody.fisher@example.com</a>
+              </td>
+              <td data-label="Lead Score">
+                <a class="text-current" href="tel:307-560-8817">307-560-8817</a>
+              </td>
+              <td data-label="Company">
+                <span class="badge bg-soft-success text-success">9/10</span>
+              </td>
+              <td data-label="">
+                <a class="text-current" href="#">Mailchimp</a>
+              </td>
+              <td data-label="" class="text-end">
+                <div class="dropdown">
+                  <a class="text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-three-dots-vertical"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <a href="#!" class="dropdown-item">
+                      Action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Another action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Something else here
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Age Title">
+                <img alt="..." src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" class="avatar avatar-sm rounded-circle patient-pic me-2">
+                <a class="text-heading font-semibold" href="#">
+                  Robert Fox
+                </a>
+              </td>
+              <td data-label="Gender">
+                <span>Web Designer</span>
+              </td>
+              <td data-label="Disease">
+                <a class="text-current" href="mailto:robert.fox@example.com">robert.fox@example.com</a>
+              </td>
+              <td data-label="Lead Score">
+                <a class="text-current" href="tel:202-555-0152">202-555-0152</a>
+              </td>
+              <td data-label="Company">
+                <span class="badge bg-soft-success text-success">7/10</span>
+              </td>
+              <td data-label="">
+                <a class="text-current" href="#">Dribbble</a>
+              </td>
+              <td data-label="" class="text-end">
+                <div class="dropdown">
+                  <a class="text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-three-dots-vertical"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <a href="#!" class="dropdown-item">
+                      Action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Another action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Something else here
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+
+            <tr>
+              <td data-label="Age Title">
+                <img alt="..." src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" class="avatar avatar-sm rounded-circle patient-pic me-2">
+                <a class="text-heading font-semibold" href="#">
+                  Robert Fox
+                </a>
+              </td>
+              <td data-label="Gender">
+                <span>Web Designer</span>
+              </td>
+              <td data-label="Disease">
+                <a class="text-current" href="mailto:robert.fox@example.com">robert.fox@example.com</a>
+              </td>
+              <td data-label="Lead Score">
+                <a class="text-current" href="tel:202-555-0152">202-555-0152</a>
+              </td>
+              <td data-label="Company">
+                <span class="badge bg-soft-success text-success">7/10</span>
+              </td>
+              <td data-label="">
+                <a class="text-current" href="#">Dribbble</a>
+              </td>
+              <td data-label="" class="text-end">
+                <div class="dropdown">
+                  <a class="text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-three-dots-vertical"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <a href="#!" class="dropdown-item">
+                      Action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Another action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Something else here
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Age Title">
+                <img alt="..." src="https://images.unsplash.com/photo-1610271340738-726e199f0258?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" class="avatar avatar-sm rounded-circle patient-pic me-2">
+                <a class="text-heading font-semibold" href="#">
+                  Darlene Robertson
+                </a>
+              </td>
+              <td data-label="Gender">
+                <span>Developer</span>
+              </td>
+              <td data-label="Disease">
+                <a class="text-current" href="mailto:darlene@example.com">darlene@example.com</a>
+              </td>
+              <td data-label="Lead Score">
+                <a class="text-current" href="tel:224-567-2662">224-567-2662</a>
+              </td>
+              <td data-label="Company">
+                <span class="badge bg-soft-warning text-warning">5/10</span>
+              </td>
+              <td data-label="">
+                <a class="text-current" href="#">Netguru</a>
+              </td>
+              <td data-label="" class="text-end">
+                <div class="dropdown">
+                  <a class="text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-three-dots-vertical"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <a href="#!" class="dropdown-item">
+                      Action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Another action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Something else here
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Age Title">
+                <img alt="..." src="https://images.unsplash.com/photo-1610878722345-79c5eaf6a48c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" class="avatar avatar-sm rounded-circle patient-pic me-2">
+                <a class="text-heading font-semibold" href="#">
+                  Theresa Webb
+                </a>
+              </td>
+              <td data-label="Gender">
+                <span>Marketing Reports</span>
+              </td>
+              <td data-label="Disease">
+                <a class="text-current" href="mailto:theresa.webb@example.com">theresa.webb@example.com</a>
+              </td>
+              <td data-label="Lead Score">
+                <a class="text-current" href="tel:401-505-6800">401-505-6800</a>
+              </td>
+              <td data-label="Company">
+                <span class="badge bg-soft-danger text-danger">2/10</span>
+              </td>
+              <td data-label="">
+                <a class="text-current" href="#">Figma</a>
+              </td>
+              <td data-label="" class="text-end">
+                <div class="dropdown">
+                  <a class="text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-three-dots-vertical"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <a href="#!" class="dropdown-item">
+                      Action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Another action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Something else here
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Age Title">
+                <img alt="..." src="https://images.unsplash.com/photo-1612422656768-d5e4ec31fac0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" class="avatar avatar-sm rounded-circle patient-pic me-2">
+                <a class="text-heading font-semibold" href="#">
+                  Kristin Watson
+                </a>
+              </td>
+              <td data-label="Gender">
+                <span>Sales Manager</span>
+              </td>
+              <td data-label="Disease">
+                <a class="text-current" href="mailto:cody.fisher@example.com">cody.fisher@example.com</a>
+              </td>
+              <td data-label="Lead Score">
+                <a class="text-current" href="tel:307-560-8817">307-560-8817</a>
+              </td>
+              <td data-label="Company">
+                <span class="badge bg-soft-success text-success">9/10</span>
+              </td>
+              <td data-label="">
+                <a class="text-current" href="#">Mailchimp</a>
+              </td>
+              <td data-label="" class="text-end">
+                <div class="dropdown">
+                  <a class="text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-three-dots-vertical"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <a href="#!" class="dropdown-item">
+                      Action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Another action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Something else here
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Age Title">
+                <img alt="..." src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" class="avatar avatar-sm rounded-circle patient-pic me-2">
+                <a class="text-heading font-semibold" href="#">
+                  Robert Fox
+                </a>
+              </td>
+              <td data-label="Gender">
+                <span>Web Designer</span>
+              </td>
+              <td data-label="Disease">
+                <a class="text-current" href="mailto:robert.fox@example.com">robert.fox@example.com</a>
+              </td>
+              <td data-label="Lead Score">
+                <a class="text-current" href="tel:202-555-0152">202-555-0152</a>
+              </td>
+              <td data-label="Company">
+                <span class="badge bg-soft-success text-success">7/10</span>
+              </td>
+              <td data-label="">
+                <a class="text-current" href="#">Dribbble</a>
+              </td>
+              <td data-label="" class="text-end">
+                <div class="dropdown">
+                  <a class="text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-three-dots-vertical"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <a href="#!" class="dropdown-item">
+                      Action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Another action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Something else here
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}

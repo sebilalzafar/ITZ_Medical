@@ -1,0 +1,192 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+              crossorigin="anonymous">
+        <link href="{% static 'css/report.css' %}" rel="stylesheet">
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        <section class="patient-report">
+            <div class="container-fluid">
+                <div class="row row1">
+                    <div class="col-5">
+                        <div >
+                            <form action="">
+                                <label for="patient-name">Patient Name:</label>
+                                <input class="w-75" type="text"  readonly>
+                                <br>
+                                <label for="patient-name">Date Of Birth:</label>
+                                <input class="w-25" type="text"  readonly>
+                                <label for="patient-name">Chart No:</label>
+                                <input class="w-25" type="text"  readonly>
+                                <br>
+                                <label for="patient-name">Status:</label>
+                                <input class="w-25" type="text"  readonly>
+                                <label for="patient-name">Chart Type:</label>
+                                <input class="w-25" type="text"  readonly>
+                                <br>
+                                <label for="patient-name">Payer:</label>
+                                <input class="w-25" type="text"  readonly>
+                                <label for="patient-name">Held Account:</label>
+                                <input class="w-25" type="text"  readonly>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    <div class="col-4">
+                        <form action="">
+                                <label for="patient-name">ATSI:</label>
+                                <input class="w-50" type="text"  readonly>
+                                <br>
+                                <label for="patient-name">Ehnicity:</label>
+                                <input class="w-50" type="text"  readonly>
+                                <br>
+                                <label for="patient-name">Refer To:</label>
+                                <input class="w-50" type="text"  readonly>
+                                <br>
+                                <label for="patient-name">Refered By:</label>
+                                <input class="w-50" type="text"  readonly>
+                                <br>
+                                <label for="patient-name">Expire Date:</label>
+                                <input class="w-50" type="text"  readonly>
+                                <br>
+                        </form>
+                    </div>
+                </div>
+                <div class="row row2">
+                    <div class="col-3">
+                        <form action="">
+                            <label for="">Address:</label>
+                        <textarea name="" id="" rows="2" cols="25" readonly></textarea><br>
+                        <label for="">Postal Address:</label>
+                        <textarea name="" id="" rows="2" cols="25" readonly></textarea>
+
+                        </form>
+                        <form action="">
+                            <label for="">Home:</label>
+                            <input type="text" readonly><br>
+                            <label for="">Work:</label>
+                            <input type="text" readonly><br>
+                            <label for="">Mobile:</label>
+                            <input type="text" readonly><br>
+                            <label for="">Fax:</label>
+                            <input type="text" readonly><br>
+                            <label for="">Email:</label>
+                            <input type="text" readonly><br>
+                            </form>
+                    </div>
+                    <div class="col-3">
+                        <form action="">
+                        <label for="">Gender:</label>
+                        <input type="text" readonly><br>
+                        <label for="">Transgender:</label>
+                        <input type="checkbox" checked><br>
+                        <label for="">Age:</label>
+                        <input type="text" readonly><br>
+                        <label for="">Martial Status:</label>
+                        <input type="text" readonly><br>
+                        <label for="">Regular Practitioner:</label>
+                        <input type="text" readonly><br>
+                        </form>
+                        <form action="">
+                            <label for="">Insurance:</label>
+                            <input type="text" readonly><br>
+                            <label for="">Occupation:</label>
+                            <input type="text" readonly><br>
+                            
+                            </form> 
+                        <form action="">
+                            <label for="">Emergency Contact:</label>
+                            <input type="text" readonly><br>
+                            <label for="">Home:</label>
+                            <input type="text" readonly><br>
+                            <label for="">Mobile:</label>
+                            <input type="text" readonly><br>
+                            
+                            </form> 
+                            
+                        
+                    </div>
+                    <div class="col-3">
+                        <form action="">
+                        <label for="">Medicare Number:</label>
+                        <input type="text" readonly><br>
+                        <label for="">Age:</label>
+                        <input type="text" readonly><br>
+                        <label for="">Expires:</label>
+                        <input type="text" readonly><br>
+                        <label for="">Medicare Gender:</label>
+                        <input type="text" readonly><br>
+                        </form>
+                        <form action="">
+                            <label for="">Concession:</label>
+                            <input type="text" readonly><br>
+                            <label for="">DVA file No:</label>
+                            <input type="text" readonly><br>
+                            <label for="">Entit:</label>
+                            <input type="text" readonly><br>
+                            <label for="">DVA file No:</label>
+                            <input type="text" readonly><br>
+                            
+                            </form>
+                            <form action="">
+                                <label for="">
+                                    IHI No:
+                                </label>
+                                <input type="text" readonly>
+                                <br>
+                                <label for="">
+                                    IHI Record status:
+                                </label>
+                                <input type="text" readonly>
+                                <br>
+                                <label for="">
+                                    IHI No. status:
+                                </label>
+                                <input type="text" readonly>
+                                <br>
+                                
+                            </form>
+                        
+                    </div>
+                    <div class="col-3">
+                        <form action="">
+                        <label for="">Country of birth:</label>
+                        <input type="text" readonly><br>
+                        <label for="">Spoken Language:</label>
+                        <input type="text" readonly><br>
+                        <label for="">Preffered Language:</label>
+                        <input type="text" readonly><br>
+                        <label for="">Interpreter Required:</label>
+                        <input type="text" readonly><br>
+                        </form>
+                        
+                    </div>
+                   
+                    
+                    
+                   
+
+                </div>
+            </div>    
+            </section>
+            <!-- Optional JavaScript; choose one of the two! -->
+            <!-- Option 1: Bootstrap Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                    crossorigin="anonymous"></script>
+            <!-- Option 2: Separate Popper and Bootstrap JS -->
+            <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+        </body>
+    </html>

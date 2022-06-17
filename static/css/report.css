@@ -1,0 +1,71 @@
+body {
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: blue;
+      }
+input[type="text"], textarea {
+
+        background-color : #cce5ddd1; 
+        border: 1px solid #d7b7b7;
+      
+      }
+.patient-report{
+    background-color: white;
+}
+    .container-fluid{
+        margin: 9px;
+        color: black;
+        width: auto;
+        background-color: #cce5ddd1;
+    }
+
+
+    
+  .patient-report .row1{
+      
+      border: 2px solid #d7b7b7;
+     padding: 6px;
+      
+  }
+
+  .patient-report .row1 input{
+      margin: 7px;
+  }
+  .patient-report .row1 label{
+width: 21%;
+  }
+
+
+  .patient-report .row2 form{
+      
+    border: 2px solid #d7b7b7;
+    padding: 5px;
+    margin: 5px;
+    
+}
+ 
+  .patient-report .row2{
+      
+    background: aliceblue;
+    
+}
+ 
+ 
+  .patient-report .row2 input{
+      
+    margin: 7px;
+    width: 65%;
+}
+  .patient-report .row2 label{
+      
+    width: 25%;
+}
+  .patient-report .row2 .col-3{
+      
+    margin: 8px;
+    height: fit-content;
+    width: 23%;
+}
+ 

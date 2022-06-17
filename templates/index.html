@@ -1,0 +1,662 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include 'modals.html' %}
+
+    <nav class="navbar navbar-expand-sm navbar-fixed-top navbar-dark fixed-top" id="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand " href="#">MediPlus</a>
+            </div>
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Department">Department</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Doctors">Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contacts">Contact</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+   
+      
+
+    <section id="Home" class="hero-wrap js-fullheight"
+        style="background-image: url(&quot;{% static 'images/xbg_3.jpg.pagespeed.ic.Wx917eesOz.webp' %}&quot;); height: 600px; background-position: 50% 0%;"
+        data-section="home" data-stellar-background-ratio="0.5">
+        <section class="topsection">
+
+
+            <div class="container">
+                <div class="row top">
+
+                    <div class="col-md-4">
+                        <div style="margin-top: 5px;">
+                            <span><i class="fas fa-phone-alt"></i></span>
+                            <span>+ 1235 2355 98</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div style="margin-top: 5px;">
+                            <span><i class="fas fa-paper-plane"></i></span>
+                            <span>youremail@email.com</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <ul>
+                            <li><a href="{% url 'login' %}">LOG IN</a></li>
+                            <li><a href='' data-toggle="modal" data-target="#signupmodal">REGISTER</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+            <!-- ---------------------------------------------topline end -->
+
+
+
+        </section>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
+                data-scrollax-parent="true" style="height: 334px;">
+                <div class="col-md-7 pt-5 ftco-animate fadeInUp ftco-animated">
+                    <div class="mt-5">
+                        <span class="subheading">Welcome to Mediplus</span>
+                        <h1 class="mb-4" style="font-size: 50px;font-weight: 900; color: black;">We are here <br>for
+                            your Care</h1>
+                        <p class="mb-4" style="font-size: 18px;color: rgba(0,0,0,.5);">Far far away, behind the word
+                            mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                            Separated they live in Bookmarksgrove.</p>
+                        <p><a href="{% url 'login' %}" class="btn btn-primary py-3 px-4">Make an appointment</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 1 for nav bar end              -->
+    <section id="About">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 about">
+                    <img src="{% static 'images/xabout.jpg.pagespeed.ic.YdESjG30xH.webp' %}" alt="">
+                </div>
+                <div class="col-md-6" style="margin: 100px 47px;">
+                    <h1 style="font-size:42px ; font-weight: bold; "><b>We Are <span
+                                style="color: #207dff;">Mediplus</span><br> A Medical Clinic</b></h1>
+                    <p style="font-size: 19px;color: #999;">A small river named Duden flows by their place and supplies
+                        it with the necessary regelialia. It is a paradisematic country,
+                        in which roasted parts of sentences fly into
+                        your mouth. It is a paradisematic country, in which roasted parts of
+                        sentences fly into your mouth.</p>
+                    <a href="{% url 'login' %}" style="color: white;background-color: #207dff;
+                    border: none;font-size: 18; padding: 18px;border-radius: 30px;text-decoration:none;"> Make an
+                        appointment</a>
+                    <a id="contact" href="">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <!-- ================================================= end -->
+        <section class="services">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-8">
+                        <h1 class="subheading1">OUR SERVICES</h1>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div><i class="fas fa-ambulance"></i></div>
+                                <h1>Emergency Services</h1>
+                                <p>A small river named Duden flows by their place and supplies it with the necessary
+                                    regelialia.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div><i class="fas fa-user-md"></i> </div>
+                                <h1>Qualified Doctors</h1>
+                                <p>A small river named Duden flows by their place and supplies it with the necessary
+                                    regelialia.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div><i class="fas fa-stethoscope"></i> </div>
+                                <h1>Outdoors Checkup</h1>
+                                <p>A small river named Duden flows by their place and supplies it with the necessary
+                                    regelialia.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div><i class="far fa-clock"></i> </div>
+                                <h1>24 Hours Service</h1>
+                                <p>A small river named Duden flows by their place and supplies it with the necessary
+                                    regelialia.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 appointment">
+                        <h1>FREE CONSULATION</h1>
+                        <form action="#" class="appoitment-form">
+                            <input type="text" class="form-control" placeholder="First Name">
+                            <input type="text" class="form-control" placeholder="Last Name">
+                            <div>
+                                <select class="form-select form-control" aria-label=".form-select-lg example"
+                                    style="color: #84757d;">
+                                    <option>Select Your Service</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Phone">
+                            <input type="text" class="form-control" placeholder="Date">
+                            <input type="text" class="form-control" placeholder="Time">
+
+                        </form>
+                        <button class="button2">Appoitment</button>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </section>
+        <!-- ===============================section End================ -->
+        <section class="section2">
+            <div class="container-fluid ">
+                <div class="section2-content">
+                    <h1>Your Health is Our Priority</h1>
+                    <p>We can manage your dream building A small river named Duden flows by their place.</p>
+                    <button>Search Place</button>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <!-- ----------section 2 for navbar scroll end -->
+
+    <section id="Department" class="section3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{% static '/images/xdept-1.jpg.pagespeed.ic.xHZoDZzjeF.webp' %}" alt="">
+                </div>
+                <div class="col-md-8 ">
+                    <div class="row staff">
+                        <div class="col-md-4 staff-content">
+                            <div class="staff-icons">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h3>Neurolog</h3>
+                            <p>Far far away, behind the word mountains</p>
+                        </div>
+                        <div class="col-md-4 staff-content">
+                            <div class="staff-icons">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h3>Opthalmology</h3>
+                            <p>Far far away, behind the word mountains</p>
+                        </div>
+                        <div class="col-md-4 staff-content">
+                            <div class="staff-icons">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h3>Nuclear Magnetic
+                            </h3>
+                            <p>Far far away, behind the word mountains</p>
+                        </div>
+                    </div>
+                    <div class="row staff">
+                        <div class="col-md-4 staff-content">
+                            <div class="staff-icons">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h3>Surgical</h3>
+                            <p>Far far away, behind the word mountains</p>
+                        </div>
+                        <div class="col-md-4 staff-content">
+                            <div class="staff-icons">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h3>Cardiology
+                            </h3>
+                            <p>Far far away, behind the word mountains</p>
+                        </div>
+                        <div class="col-md-4 staff-content">
+                            <div class="staff-icons">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h3>Traumatology
+                            </h3>
+                            <p>Far far away, behind the word mountains</p>
+                        </div>
+                    </div>
+                    <div class="row staff">
+                        <div class="col-md-4 staff-content">
+                            <div class="staff-icons">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h3>X-ray
+                            </h3>
+                            <p>Far far away, behind the word mountains</p>
+                        </div>
+                        <div class="col-md-4 staff-content">
+                            <div class="staff-icons">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h3>Dental
+                            </h3>
+                            <p>Far far away, behind the word mountains</p>
+                        </div>
+                        <div class="col-md-4 staff-content">
+                            <div class="staff-icons">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h3>Cardiology
+                            </h3>
+                            <p>Far far away, behind the word mountains</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <section>
+            <div class="container-fluid section4">
+                <div class="row">
+                    <div class="qualification">
+                        <h1>Our Qualified Doctors
+                        </h1>
+                        <p> Separated they live in. A small river named Duden flows by their
+                            place and supplies it<br>with the necessary regelialia. It is a paradisematic country
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+        <!--============================================ section3 for navbar end end-->
+        <section id="Doctors" class="hospital-detail">
+
+        </section>
+
+        <section class="section5">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="funfacts">
+                            <span>Fun Facts</span>
+                            <h1>Over 5,100 patients trust us</h1>
+                            fMake an appointment</button>
+                        </div>
+                    </div>
+                    <div class="col-md-7 funfacts1">
+                        <div class="row">
+                            <div class="col-md-6 experience forpadding">
+                                <h1>30</h1>
+                                <span>Years of Experienced</span>
+                            </div>
+                            <div class="col-md-6 experience forpadding ">
+                                <h1>4,500</h1>
+                                <span>Happy patients</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 experience1 forpadding ">
+                                <h1>84</h1>
+                                <span>Number of Doctors
+                                </span>
+                            </div>
+                            <div class="col-md-6 forpadding ">
+                                <h1>300</h1>
+                                <span>Number of Staffs </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+    <!-- =========================================sction 4 for nav bar end  -->
+    <section id="Blog">
+        <section style="background-color: #f8f9fa;">
+            <div class="container update-container">
+                <div class="row">
+                    <div class="update">
+                        <div class="updates">
+                            <h1 style="font-size: 50px; font-weight: 680;">
+                                Gets Every Single Updates Here</h1>
+                            <p style="font-size: 19px;">Far far away, behind the word mountains,
+                                far from the countries Vokalia and Consonantia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="company-user">
+                            <div>
+                                <img src="{% static 'images/ximage_1.jpg.pagespeed.ic.fBamkg-o75.webp' %}" alt="">
+                            </div>
+                            <div>
+                                <a href="" class="a1">June 9, 2019 </a>
+                                <a href=""> Admin</a>
+                                <a href=""><i class="fas fa-comment-dots"></i></a>
+                                <a href="">3</a>
+                            </div>
+                            <h3>Scary Thing That You Don’t Get Enough Sleep</h3>
+                            <p>Far far away, behind the word mountains,
+                                far from the countries Vokalia and Consonantia
+                                there live the blind texts.</p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="company-user">
+                            <div>
+                                <img src="{% static 'images/ximage_2.jpg.pagespeed.ic.SAYCHrvPbF.webp' %}" alt="">
+                            </div>
+                            <div>
+                                <a href="" class="a1">June 9, 2019 </a>
+                                <a href=""> Admin</a>
+                                <a href=""><i class="fas fa-comment-dots"></i></a>
+                                <a href="">3</a>
+                            </div>
+                            <h3>Scary Thing That You Don’t Get Enough Sleep</h3>
+                            <p>Far far away, behind the word mountains,
+                                far from the countries Vokalia and Consonantia
+                                there live the blind texts.</p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="company-user">
+                            <div>
+                                <img src="{% static 'images/ximage_3.jpg.pagespeed.ic.TUip_ERpmn.webp' %}" alt="">
+                            </div>
+                            <div>
+                                <a href="" class="a1">June 9, 2019 </a>
+                                <a href=""> Admin</a>
+                                <a href=""><i class="fas fa-comment-dots"></i></a>
+                                <a href="">3</a>
+                            </div>
+                            <h3>Scary Thing That You Don’t Get Enough Sleep</h3>
+                            <p>Far far away, behind the word mountains,
+                                far from the countries Vokalia and Consonantia
+                                there live the blind texts.</p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="company-user">
+                            <div>
+                                <img src="{% static 'images/ximage_4.jpg.pagespeed.ic.iJT0iyQqQy.webp' %}" alt="">
+                            </div>
+                            <div>
+                                <a href="" class="a1">June 9, 2019 </a>
+                                <a href=""> Admin</a>
+                                <a href=""><i class="fas fa-comment-dots"></i></a>
+                                <a href="">3</a>
+                            </div>
+                            <h3>Scary Thing That You Don’t Get Enough Sleep</h3>
+                            <p>Far far away, behind the word mountains,
+                                far from the countries Vokalia and Consonantia
+                                there live the blind texts.</p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="company-user">
+                            <div>
+                                <img src="{% static 'images/ximage_5.jpg.pagespeed.ic.IaTxArRsR-.webp' %}" alt="">
+                            </div>
+                            <div>
+                                <a href="" class="a1">June 9, 2019 </a>
+                                <a href=""> Admin</a>
+                                <a href=""><i class="fas fa-comment-dots"></i></a>
+                                <a href="">3</a>
+                            </div>
+                            <h3>Scary Thing That You Don’t Get Enough Sleep</h3>
+                            <p>Far far away, behind the word mountains,
+                                far from the countries Vokalia and Consonantia
+                                there live the blind texts.</p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="company-user">
+                            <div>
+                                <img src="{% static 'images/ximage_6.jpg.pagespeed.ic.xHZoDZzjeF.webp' %}" alt="">
+                            </div>
+                            <div>
+                                <a href="" class="a1">June 9, 2019 </a>
+                                <a href=""> Admin</a>
+                                <a href=""><i class="fas fa-comment-dots"></i></a>
+                                <a href="">3</a>
+                            </div>
+                            <h3>Scary Thing That You Don’t Get Enough Sleep</h3>
+                            <p>Far far away, behind the word mountains,
+                                far from the countries Vokalia and Consonantia
+                                there live the blind texts.</p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- =============------------------------container End.......,,,,.,.,.,.,., -->
+
+        
+        <!-- -----------------------------------------------------section end -->
+    </section>
+
+
+    <section id="Contacts">
+        <section>
+            <div class="container contactus">
+                <div class="row">
+                    <div style="height: 280px;position: relative;">
+                        <div class="contactus1">
+                            <h1>Contact Us</h1>
+                            <p>Far far away, behind the word mountains,
+                                far from the countries Vokalia and Consonantia </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="sepration1">
+                            <div>
+                                <i class="fas fa-map-signs"></i>
+                            </div>
+                            <div>
+                                <h3>Address</h3>
+                                <p>198 West 21th Street,Suite 721 New York NY 10016</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="sepration1">
+                            <div>
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Contact Number</h3>
+                                <span>+ 1235 2355 98</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="sepration1">
+                            <div>
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <div>
+                                <h3>Email Address</h3>
+                                <span>info@yoursite.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="sepration1">
+                            <div>
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <div>
+                                <h3>Website</h3>
+                                <span>yourwebsite.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container location-section">
+                <div class="row">
+                    <div class="col-md-6" style="margin: 0;padding: 0;">
+                        <div class="div">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13288.539840035934!2d73.07594429999999!3d33.6277425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1641193961756!5m2!1sen!2s"
+                                width="900" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="margin: 0;padding: 0;">
+                        <div class="location-section1">
+                            <form action="">
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Your Name">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Your Email">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Subject">
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                        placeholder="Message" rows="0" style="height: 150px;"></textarea>
+                                </div>
+                                <button>Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="overlay"></div>
+            <div style="position: relative;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="footer-content">
+                            <div class="items item1">
+                                <h1>Mediplus</h1>
+                                <p>Far far away, behind the word mountains, far from the countries.</p>
+                                <div><i class="fab fa-twitter"></i>
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </div>
+                            <div class="items item2">
+                                <h1>Department</h1>
+                                <div>
+                                    <ul>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspNeurology</li>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspOpthalmology</li>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspNuclear Magnetic</li>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspSurgical</li>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspCardiology</li>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspDental</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="items item3">
+                                <h1>Links</h1>
+                                <div>
+                                    <ul>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspHome</li>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspAbout</li>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspDepartment</li>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspDoctors</li>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspBlog</li>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspPricing</li>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspContatct</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="items item4">
+                                <h1>Services</h1>
+                                <div>
+                                    <ul>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspEmergency Services</li>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspQualified Doctors</li>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbspOutdoors Checkup</li>
+                                        <li><i class="fas fa-long-arrow-alt-right"></i>&nbsp24 Hours Services</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="items item5">
+                                <h1>Have a Questions?</h1>
+                                <ul>
+                                    <li style="color: black;">
+                                        <span><i class="fas fa-map-marker-alt"></i></span>
+                                        <span>203 Fake St. Mountain View,
+                                            &nbsp&nbsp&nbsp&nbspSan Francisco, California, USA
+                                        </span>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href=""><span><i class="fas fa-phone-alt"></i></span>
+                                            <span>+2 392 3929 210</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span><i class="fas fa-envelope"></i></span>
+                                            <span>info@yourdomain.com</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </section>
+
+   
+
+{% endblock content %}
