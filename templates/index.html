@@ -17,7 +17,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#About">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link" href="#Department">Department</a>
                 </li>
                 <li class="nav-item">
@@ -35,7 +35,11 @@
         </div>
     </nav>
    
-      
+    <div class="sticky-container">
+
+            <a href="" data-toggle="modal" data-target="#servicemodal" class=" font-weight-bold"> SERVICES </a>
+                <span class="blinking">New</span>
+      </div>
 
     <section id="Home" class="hero-wrap js-fullheight"
         style="background-image: url(&quot;{% static 'images/xbg_3.jpg.pagespeed.ic.Wx917eesOz.webp' %}&quot;); height: 600px; background-position: 50% 0%;"
@@ -86,13 +90,13 @@
                         <p class="mb-4" style="font-size: 18px;color: rgba(0,0,0,.5);">Far far away, behind the word
                             mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
                             Separated they live in Bookmarksgrove.</p>
-                        <p><a href="{% url 'login' %}" class="btn btn-primary py-3 px-4">Make an appointment</a></p>
+                        <p><a href="#" data-toggle="modal" data-target="#servicemodal" class="btn btn-primary py-3 px-4 font-weight-bold">OUR SERVICES</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- section 1 for nav bar end              -->
+    <!-- section 1 for nav bar end-->
     <section id="About">
         <div class="container">
             <div class="row">

@@ -9,7 +9,8 @@ from django.contrib.auth.forms import *
 from django.views.generic import CreateView
 from .forms import *
 from django.contrib.auth.forms import AuthenticationForm
-from .models import *
+from App.models import *
+from pharmacy.models import *
 
 
 
@@ -316,4 +317,9 @@ def my_clinic(request):
 # test view
 
 def test(request):
-    return render(request,'dashboard/inbox.html')
+    data = Medicine.objects.all()
+    return render(request,'pharmacy/products.html', { 'data': data })
+
+
+def cart(request):
+    return render(request,'pharmacy/cart.html',)

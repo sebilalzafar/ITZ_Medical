@@ -83,6 +83,9 @@ urlpatterns = [
         name="password_reset_complete"),
 
 
+    
+    #pharmacy views
+    path('', include('pharmacy.urls')),
 
 
     
@@ -92,6 +95,7 @@ urlpatterns = [
     # test Url
     
     path('test/', views.test,name='test'),
+    path('pharmacy/cart/', views.cart,name='cart'),
     
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
